@@ -1,0 +1,30 @@
+{
+  "name": "payload",
+  "version": "1.0.0",
+  "description": "Playwright test framework for Benefits Dashboard",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:reporter": "npx playwright test --reporter=html",
+    "report": "npx playwright show-report",
+    "install:browsers": "npx playwright install",
+    "test:visual": "npx playwright test --screenshot=on --video=on",
+    "test:failed-only": "npx playwright test --grep=\"should.*fail\"",
+    "test:smoke": "npx playwright test --grep=\"@smoke\"",
+    "test:regression": "npx playwright test --grep=\"@regression\"",
+    "artifacts:clean": "rm -rf artifacts/",
+    "artifacts:view": "npx playwright show-report artifacts/html-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "commonjs"
+}

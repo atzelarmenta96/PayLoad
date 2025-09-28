@@ -1,0 +1,22 @@
+
+# Playwright
+#node_modules/
+#/test-results/
+#/playwright-report/
+#/blob-report/
+#/playwright/.cache/
+#/playwright/.auth/
+
+
+# Playwright
+artifacts/
+storage-state.json
+test-results/
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+npm-debug.log*
