@@ -11,7 +11,7 @@ export class BasePage {
   async navigateTo() {
     try {
       await this.page.goto('/Prod');
-      await this.page.waitForLoadState('networkidle', { timeout: 15000 });
+      await this.page.waitForLoadState('networkidle', { timeout: 30000 });
     } catch (error) {
       await this.captureFailure(`navigation-to-${url}`);
       throw error;

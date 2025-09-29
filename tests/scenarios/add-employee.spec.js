@@ -29,7 +29,7 @@ test.describe('Add Employee Scenario', () => {
   await dashboardPage.verifyEmployeeCalculations(employee);
 });
 
- test('employee fill with more than 50 characters', async () => {
+ test('Validate that an employee cannot be saved when the fields exceed the established restrictions', async () => {
   const employee = invalidEmployees.extendedEmployee;
 
   await dashboardPage.openAddEmployeeModal();
